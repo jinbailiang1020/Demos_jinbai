@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div id="editor" contentEditable="true"></div>
+
+<script type="text/javascript" src="rich_editor.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+function disp_prompt()
+  {
+  	var strContent = document.getElementById('editor').innerHTML;
+var name=prompt("请输入您的名字",strContent);
+  if (name!=null && name!="")
+    {
+document.getElementById('editor').innerHTML= name;
+    }
+  }
+</script>
+</head>
+<body>
+<div id="editor" contentEditable="true"  style="background-color: aqua;"> </div>
+<input type="button" onclick="disp_prompt()" value="编辑正文" />
+<!--<a href="javascript:alert(787878787)" >test</a>-->
+<script type="text/javascript" src="rich_editor.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

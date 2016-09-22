@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundmain"
+    tools:context="com.example.jinbailiang.photocropupload.PhotoCropUploadActivity">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/updateImage"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#e1c5c1"
+        android:text="上传图片" />
+
+    <ImageView
+        android:background="#5562e1dc"
+        android:layout_marginTop="20dp"
+        android:id="@+id/currentImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/updateImage"
+        android:layout_centerHorizontal="true"
+   />
+
+
+<!--    <com.example.jinbailiang.utils.HorizontalListView
+        android:layout_below="@id/currentImage"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/horizon_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.example.jinbailiang.utils.HorizontalListView>-->
+    <HorizontalScrollView
+        android:layout_below="@id/currentImage"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_imageShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+
+    </HorizontalScrollView>
+</RelativeLayout>

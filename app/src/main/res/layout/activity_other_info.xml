@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jinbailiang.otherinfomation.OtherInfoActivity">
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:hint="输入你要进入的网址"
+        android:id="@+id/editText_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Spinner
+        android:layout_below="@+id/editText_input"
+        android:id="@+id/spinner_otherInfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#33001499"
+        android:visibility="gone" />
+
+    <WebView
+        android:layout_below="@+id/editText_input"
+        android:id="@+id/webView_otherInfo"
+        android:background="#11223388"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</RelativeLayout>

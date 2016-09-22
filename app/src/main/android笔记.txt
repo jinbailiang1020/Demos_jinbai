@@ -1,0 +1,4 @@
+listView
+1：Adapter  优化  settag  是公共部分才能使用，如果每个item有区别；重用tag就会出问题；
+
+2： adapter数据改变后  需要notify；不然再加载时就会报错；

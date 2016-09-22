@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.example.jinbailiang.demos_jinbai"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    //    provided "com.google.code.findbugs:jsr305:${JSR_305_VERSION}" compile "com.android.support:appcompat-v7:${APPCOMPAT_V7_VERSION}" compile "com.github.bumptech.glide:glide:${GLIDE_VERSION}" compile "com.mcxiaoke.volley:library:${VOLLEY_VERSION}" compile "com.nostra13.universalimageloader:universal-image-loader:${UIL_VERSION}" compile "com.squareup.picasso:picasso:${PICASSO_VERSION}" compile 'com.facebook.fresco:fresco:0.5.0+'
+//    compile 'com.facebook.fresco:drawee:0.5.0+'
+//    compile 'com.facebook.fresco:drawee-volley:0.5.0+'
+//    compile 'com.facebook.fresco:fbcore:0.5.0+'
+//    compile 'com.facebook.fresco:imagepipeline:0.5.0+'
+//    compile 'com.facebook.fresco:imagepipeline-okhttp:0.5.0'
+//    compile files('libs/com.squareup.picasso/picasso/2.5.2/3f998a26355e4138e3e7a880a5dac57fc4370339/picasso-2.5.2-sources.jar')
+//    compile files('libs/com.facebook.fresco/fresco/0.5.0/a79f0741e5e17d2a2862e49d3897c6ea34d715f2/fresco-0.5.0-sources.jar')
+//    compile 'com.squareup.okhttp:okhttp:2.0.0'
+//    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+}
